@@ -11,7 +11,7 @@ void Bottle::PrintBottle(){  // Функция вывода данных о бу
     cout << Volume << " " << FillingPer;
 }
 
-Bottle Bottle::operator+ (Bottle capacity2){ // Оператор сложения двух юутылок
+Bottle Bottle::operator+ (Bottle capacity2){ // Оператор сложения двух бутылок
     Bottle t;
     t.Volume = Volume;
     t.FillingPer = FillingPer;
@@ -22,7 +22,7 @@ Bottle Bottle::operator+ (Bottle capacity2){ // Оператор сложени�
     return t; 
 }
 
-Bottle Bottle::operator- (Bottle capacity2){  // Оператор вычитания двух бытолок
+Bottle Bottle::operator- (Bottle capacity2){  // Оператор вычитания двух бутылок
     Bottle t;
     t.Volume = Volume;
     t.FillingPer = FillingPer;
