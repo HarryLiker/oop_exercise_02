@@ -1,5 +1,3 @@
 #pragma once
-#include "bottle.h"
-#include "functions.h"
 
-int menu();
+int menu(); // Функция вывода меню действий

@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int menu()
+int menu() // Функция вывода меню действий
 {
     while(true){
         int variant;
@@ -32,6 +32,9 @@ int menu()
                 if(c == '|'){
                     Comparison(a, b);
                 }
+                else{
+                    cout << "Entered invalid operation\n\n";
+                }
             }
             else{
                 PrintResult(a, b, c, Operation(a, b, c));
@@ -45,6 +48,10 @@ int menu()
             a.GetBottle();
             cin >> c;
             b.GetBottle();
+            if(DataValidation(a, b) == 1){
+                cout << "\n";
+                continue;
+            }
             Verification(a, b, c);
         }
         else if (variant == 3){
@@ -52,7 +59,7 @@ int menu()
             return 0;
         }
         else{
-            cout << "Entered action does not exist\n";
+            cout << "Entered action does not exist\n\n";
         }
    }
    return 0;
